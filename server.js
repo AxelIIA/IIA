@@ -19,7 +19,7 @@ app.post('/api/data', (req, res) => {
     // const { ip } = req
     const { email, password } = req.body
     console.log(email, password)
-    res.status(200)
+    res.status(200).json({"message": "connexion réuissie"})
 })
 
 app.listen(process.env.PORT, () => {

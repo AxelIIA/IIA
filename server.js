@@ -14,7 +14,7 @@ app.use(express.json({
 }))
 
 // Quand il reçoit une requête visant cet endpoint
-// http://localhost:3001/api/data
+// https://iia-front.onrender.com//api/data
 app.post('/api/data', (req, res) => {
     // const { ip } = req
     const { email, password } = req.body
